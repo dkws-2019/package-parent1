@@ -1,0 +1,16 @@
+dubbo:
+  consumer:
+    check: true
+  application:
+    name: provider
+  registry:
+    address: zookeeper://192.168.110.128:2185
+  protocol:
+    name: dubbo
+    port: 20880
+
+server:
+  port: 8081
+spring:
+  profiles:
+    include: mapper

@@ -1,0 +1,12 @@
+dubbo:
+  consumer:
+    check: true
+  application:
+    name: custom
+  registry:
+    address: zookeeper://192.168.110.128:2185
+server:
+  port: 8082
+spring:
+  profiles:
+    include: mapper
