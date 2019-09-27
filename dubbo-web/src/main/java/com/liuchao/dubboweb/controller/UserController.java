@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("api")
 public class UserController {
 
-    @Reference
+    @Reference(timeout = 10000)
     private UserService userService;
 
 

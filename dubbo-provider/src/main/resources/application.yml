@@ -4,10 +4,12 @@ dubbo:
   application:
     name: provider
   registry:
-    address: zookeeper://192.168.110.128:2185
+    address: zookeeper://192.168.0.241:2181
   protocol:
     name: dubbo
     port: 20880
+  provider:
+    timeout: 10000
 
 server:
   port: 8081
